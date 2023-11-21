@@ -1,0 +1,51 @@
+{
+  "name": "svelte-obsidian",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "start": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+  },
+  "bin": {
+    "svelte-obsidian": ".svelte-kit/output/server/index.js"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "^2.0.0",
+    "@sveltejs/kit": "^1.27.6",
+    "@types/node": "^20.9.1",
+    "@types/zepto": "^1.0.36",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "postcss-load-config": "^4.0.1",
+    "sass": "^1.69.5",
+    "svelte": "^4.2.3",
+    "svelte-check": "^3.6.0",
+    "svelte-hero-icons": "^5.0.0",
+    "svelte-preprocess": "^5.1.0",
+    "svelte-windicss-preprocess": "^4.2.8",
+    "tailwindcss": "^3.3.2",
+    "tslib": "^2.4.1",
+    "typescript": "^5.0.0",
+    "vite": "^4.4.2",
+    "vite-plugin-windicss": "^1.9.1",
+    "windicss": "^3.5.6"
+  },
+  "type": "module",
+  "dependencies": {
+    "@bytemd/plugin-gfm": "^1.21.0",
+    "@friendofsvelte/tipex": "^0.0.1-meta-stable.5",
+    "@tiptap/core": "^2.1.12",
+    "@tiptap/extension-highlight": "^2.1.12",
+    "@tiptap/extension-typography": "^2.1.12",
+    "@tiptap/pm": "^2.1.12",
+    "@tiptap/starter-kit": "^2.1.12",
+    "bytemd": "^1.21.0",
+    "fraction.js": "github:rawify/Fraction.js#master",
+    "html-to-markdown": "^1.0.0",
+    "node-html-markdown": "^1.3.0",
+    "tiptap-markdown": "^0.8.4"
+  }
+}
